@@ -1,25 +1,21 @@
 const { getEmployerRole } = require("../src");
+const employees = [
+  {
+    name: "Satti",
 
+    role: "Developer",
+  },
+  {
+    name: "Jenny",
 
-const employees = [{
+    role: "Sales Associate",
+  },
+  {
+    name: "Javid",
 
-  name: 'Satti',
-
-  role: 'Developer'
-
-}, {
-
-  name: 'Jenny',
-
-  role: 'Sales Associate'
-
-}, {
-
-  name: 'Javid',
-
-  role: 'Human Recommended Reading Assistant'
-
-}]
+    role: "Human Recommended Reading Assistant",
+  },
+];
 
 describe("getEmployerRole", () => {
   test("returns the employee's role in the company", () => {
